@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ XML 声明：指定 XML 版本为 1.0，编码为 utf-8。
+     Android 系统解析该文件时，会按此编码读取字符。必须放在第一行，前面不能有空行或空格。
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <!--
+    manifest 根元素，每个AndroidManiffest有且只有一个
+    xmlns:android Android命名空间
+    xmlns:tools Tool命名空间
+    -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/yt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/yt_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Todoapp" >
+
+        <!--
+             <application> 标签：每个manifest中只能有一个,它定义整个应用级别的配置，
+            四大组件（Activity、Service、BroadcastReceiver、ContentProvider）都在它内部。
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".demo.layout.LinearLayoutActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".demo.layout.RelativeLayoutActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".demo.layout.FarmeLayoutActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".demo.component.TextViewActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".demo.component.ButtonActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

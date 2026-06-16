@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".demo.component.ButtonActivity">
+    <Button
+        android:id="@+id/button1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setClink"
+        android:text="@string/load1"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load2"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load3"/>
+    <Button
+        android:id="@+id/button4"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load4"/>
+    <Button
+        android:id="@+id/button5"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load5"/>
+    <Button
+        android:id="@+id/button6"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint ="#F44336"
+        android:text="圆角按钮"/>
+    <Button
+        android:id="@+id/button7"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint ="@color/black"
+        app:icon = "@drawable/yt1"
+        android:text="图标按钮"/>
+    <Button
+        android:id="@+id/button8"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint ="#9C27B0"
+        android:enabled="false"
+        android:text="禁用按钮"/>
+    <Button
+        android:id="@+id/button9"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="图标按钮"/>
+
+</LinearLayout>

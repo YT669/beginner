@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">"待办助手"</string>
+    <string name="text">"你好呀！"</string>
+    <string name="load1">"登录1"</string>
+    <string name="load2">"登录2"</string>
+    <string name="load3">"登录3"</string>
+    <string name="load4">"登录4"</string>
+    <string name="load5">"登录5"</string>
+
+</resources>
